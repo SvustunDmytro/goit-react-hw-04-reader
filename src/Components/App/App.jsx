@@ -6,7 +6,7 @@ import Reader from '../Reader/Reader';
 const App = () => (
   <div className={styles.App}>
     <Switch>
-      <Route path="/reader" component={Reader} />
+      <Route path="/reader" exact component={Reader} />
       <Redirect to="/reader" component={Reader} />
     </Switch>
   </div>
